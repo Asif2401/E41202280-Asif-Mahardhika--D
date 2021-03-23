@@ -1,0 +1,56 @@
+package Tugas_Minggu_3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ACER
+ */
+public class E {
+    public static void main(String[] args) {
+        
+        Scanner s = new Scanner(System.in);
+        System.out.println("         Sekawan Cafee");
+        System.out.println("         Aneka Minuman");
+        System.out.println("--------------------------------------------");
+        System.out.println("1. Green Tea");
+        System.out.println("2. Milkshake");
+        System.out.println("3. Matcha");
+        System.out.println("4. Boba Milk");
+        System.out.println("5. Soda Gembira");
+        System.out.println("--------------------------------------------");
+        System.out.print("Masukan nama pembeli : ");
+        String nama = s.nextLine();
+        System.out.print("Silahkan masukan nomer menu pilihan anda : ");
+        
+        int op = s.nextInt();
+        String menu = "";
+        
+        switch (op) {
+            case 1:
+                menu = "Green Tea";
+                break;
+            case 2:
+                menu = "Milkshake";
+                break;
+            case 3:
+                menu = "Matcha";
+                break;
+            case 4:
+                menu = "Boba Milk";
+                break;
+            case 5:
+                menu = "Soda Milk";
+                break;
+            default:
+                System.out.println("Mohon maaf pilihan tidak ada di daftar");
+                break;
+        }       
+        
+        System.out.println("Menu yang anda pilih adalah : " + menu);
+        System.out.println("Pesanan anda akan segera kami antar");
+        System.out.println("Terima kasih " + nama + " telah berkunjung di Sekawan Cafee");
+        
+        
+    }
+}
