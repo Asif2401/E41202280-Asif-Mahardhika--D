@@ -1,0 +1,12 @@
+public class Tugas2_2 {
+
+    public static void main(String[] args) {
+       
+   
+      System.out.println("          Do_While          ");
+      System.out.println("Bilangan Perkalian 2 (0-100)");
+      System.out.println("============================");
+        for (int i=2; i<=100; i*=2) {
+    System.out.print(i + " ");
+    }
+    }
